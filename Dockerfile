@@ -18,5 +18,6 @@ RUN   apk --no-cache upgrade && \
         git
 
 USER miner
+COPY config.json /xmrig
 WORKDIR    /xmrig
 ENTRYPOINT  ["./xmrig"]
